@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: springboot-curator #服务名称
+
+zookeeper:
+  server: 192.168.0.133:2181,192.168.0.133:2182,192.168.0.133:2183
+  namespace: colinspace
+  sessionTimeoutMs: 5000
+  connectionTimeoutMs: 5000
+  maxRetries: 3
+  baseSleepTimeMs: 1000
